@@ -468,6 +468,15 @@ li + li {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.photos-section {
+  display: none;
+  padding-bottom: clamp(72px, 10vw, 126px);
+}
+
+.photos-section:target {
+  display: block;
+}
+
 .photo-gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
