@@ -696,6 +696,41 @@ li + li {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.reviews-heading {
+  align-items: center;
+}
+
+.review-score {
+  justify-self: end;
+  width: min(300px, 100%);
+  padding: 26px;
+  text-align: center;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+}
+
+.review-score span {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.review-score strong {
+  display: block;
+  margin-top: 10px;
+  color: var(--chocolate);
+  font-size: clamp(52px, 7vw, 76px);
+  line-height: 1;
+}
+
+.review-score p {
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+
 .review-grid blockquote {
   margin: 0;
 }
@@ -926,6 +961,10 @@ li + li {
   .location-banner,
   .booking-layout {
     grid-template-columns: 1fr;
+  }
+
+  .review-score {
+    justify-self: start;
   }
 
   .booking-panel {
