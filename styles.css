@@ -15,7 +15,7 @@
   --gold: var(--stone);
   --sky: var(--soft);
   --shadow: none;
-  --headline-font: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --headline-font: "Source Sans 3", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --body-font: "Montserrat", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
