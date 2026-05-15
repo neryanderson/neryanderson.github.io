@@ -523,6 +523,23 @@ li + li {
   color: var(--soft);
 }
 
+.environment-intro-title,
+.environment-intro-text {
+  font-family: var(--body-font);
+}
+
+.environment-intro-title {
+  margin: 0;
+  font-size: clamp(18px, 2vw, 23px);
+  font-weight: 500;
+}
+
+.environment-intro-text {
+  margin: 10px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .environment-grid {
   grid-template-columns: repeat(4, 1fr);
 }
