@@ -47,6 +47,10 @@
         <path d="M6 8l1.5 1.5"></path>
         <path d="M18 8l-1.5 1.5"></path>
       </symbol>
+      <symbol id="icon-location" viewBox="0 0 24 24">
+        <path d="M12 21s7-5.4 7-12a7 7 0 0 0-14 0c0 6.6 7 12 7 12Z"></path>
+        <circle cx="12" cy="9" r="2.5"></circle>
+      </symbol>
       <symbol id="icon-wifi" viewBox="0 0 24 24">
         <path d="M4 9a12 12 0 0 1 16 0"></path>
         <path d="M7 12.5a7.5 7.5 0 0 1 10 0"></path>
@@ -310,10 +314,18 @@
       </section>
 
       <section class="location-banner" id="locatie">
-        <div>
+        <div class="location-content">
           <p class="eyebrow">Locatie</p>
           <h2>Locatie</h2>
-          <p>Casa Cunera ligt in Spanje / Costa Blanca / Benissa, in de exclusieve urbanisatie La Viña. Alicante luchthaven ligt op 95 km en Valencia luchthaven op 140 km.</p>
+          <p>Casa Cunera ligt rustig aan de kust van Benissa, in de exclusieve urbanisatie La Viña. Vanuit de villa rijd je snel naar stranden, restaurants, Moraira en Calpe.</p>
+          <div class="address-card">
+            <svg class="tile-icon" aria-hidden="true"><use href="#icon-location"></use></svg>
+            <div>
+              <span>Adres</span>
+              <strong>Calle de Toyina 16</strong>
+              <p>Benissa, Costa Blanca, Spanje</p>
+            </div>
+          </div>
           <div class="distance-list">
             <span>Cala Baladrar binnen 3 km</span>
             <span>Restaurants circa 3 km</span>
@@ -321,8 +333,19 @@
             <span>Alicante 95 km</span>
             <span>Valencia 140 km</span>
           </div>
+          <a class="button primary route-link" href="https://www.google.com/maps/search/?api=1&amp;query=Calle%20de%20Toyina%2016%2C%20Benissa%2C%20Spain" target="_blank" rel="noopener">Bekijk route</a>
         </div>
-        <img src="assets/casa-cunera/Casa%20Cunera%20%2844%29%20uitzicht.jpg" alt="Kust en omgeving bij Benissa">
+        <div class="map-panel" aria-label="Kaartlocatie Casa Cunera">
+          <div class="map-grid"></div>
+          <div class="map-pin">
+            <svg class="tile-icon" aria-hidden="true"><use href="#icon-location"></use></svg>
+            <strong>Casa Cunera</strong>
+            <span>Calle de Toyina 16</span>
+          </div>
+          <div class="map-place place-coast">Kust Benissa</div>
+          <div class="map-place place-moraira">Moraira</div>
+          <div class="map-place place-calpe">Calpe</div>
+        </div>
       </section>
 
       <section class="section reviews-section">
