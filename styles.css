@@ -523,6 +523,16 @@ li + li {
   color: var(--soft);
 }
 
+.environment-heading {
+  display: block;
+  max-width: 760px;
+  text-align: left;
+}
+
+.environment-intro {
+  margin-top: 14px;
+}
+
 .environment-intro-title,
 .environment-intro-text {
   font-family: var(--body-font);
