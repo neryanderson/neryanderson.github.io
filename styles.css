@@ -657,6 +657,11 @@ li + li {
   align-items: center;
 }
 
+.reviews-intro {
+  font-family: var(--body-font);
+  font-weight: 500;
+}
+
 .review-score {
   justify-self: end;
   width: min(300px, 100%);
