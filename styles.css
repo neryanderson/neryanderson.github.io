@@ -551,9 +551,14 @@ li + li {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 12px;
+  align-items: stretch;
+  width: 100%;
 }
 
 .distance-list div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 122px;
   padding: 22px 18px;
   background: var(--white);
