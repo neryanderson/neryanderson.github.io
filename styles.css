@@ -828,33 +828,6 @@ li + li {
   font-size: 14px;
 }
 
-.host {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
-}
-
-.host img {
-  width: 58px;
-  height: 58px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.host strong,
-.host span {
-  display: block;
-}
-
-.host span {
-  margin-top: 3px;
-  color: var(--muted);
-  font-size: 13px;
-}
-
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -867,6 +840,20 @@ li + li {
 .site-footer p {
   margin: 6px 0 0;
   color: var(--soft);
+}
+
+.footer-host {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.footer-host img {
+  width: 58px;
+  height: 58px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 50%;
 }
 
 .footer-links {
