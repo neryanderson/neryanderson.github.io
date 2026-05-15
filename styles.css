@@ -359,9 +359,7 @@ li + li {
 }
 
 .section-heading.centered {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
+  text-align: left;
 }
 
 .section-heading.centered p:last-child {
