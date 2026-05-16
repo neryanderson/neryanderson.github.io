@@ -711,6 +711,7 @@ li + li {
   font-family: var(--body-font);
   font-size: clamp(18px, 2vw, 23px);
   font-weight: 500;
+  margin-top: 1em;
 }
 
 .review-score {
