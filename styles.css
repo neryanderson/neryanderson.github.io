@@ -421,6 +421,7 @@ li + li {
 
 .feature-cards,
 .split-list,
+.environment-grid,
 .review-grid,
 .rate-cards {
   display: grid;
@@ -434,6 +435,7 @@ li + li {
 
 .feature-cards article,
 .split-list article,
+.environment-grid article,
 .review-grid blockquote,
 .rate-cards article,
 .booking-panel {
@@ -445,6 +447,7 @@ li + li {
 
 .feature-cards article,
 .split-list article,
+.environment-grid article,
 .review-grid blockquote,
 .rate-cards article {
   padding: 26px;
@@ -547,12 +550,19 @@ li + li {
 
 .environment-section {
   width: min(1260px, calc(100% - 36px));
-  padding: clamp(72px, 10vw, 118px) 0 0;
+  padding: clamp(72px, 10vw, 118px) clamp(20px, 5vw, 64px);
   margin-top: clamp(72px, 10vw, 126px);
+  background: var(--green);
+  border-radius: 32px;
 }
 
-.environment-section h2 {
-  color: var(--chocolate);
+.environment-section h2,
+.environment-section h3 {
+  color: var(--white);
+}
+
+.environment-section p {
+  color: var(--soft);
 }
 
 .environment-heading {
@@ -578,62 +588,18 @@ li + li {
 
 .environment-intro-text {
   margin: 10px 0 0;
-  color: var(--muted);
   font-size: 14px;
   font-weight: 400;
 }
 
-.activity-grid {
-  display: grid;
+.environment-grid {
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
 }
 
-.activity-card {
-  position: relative;
-  min-height: 260px;
-  overflow: hidden;
-  color: var(--white);
+.environment-grid article {
   background: var(--chocolate);
-  border-radius: 18px;
-}
-
-.activity-card img {
-  width: 100%;
-  height: 100%;
-  min-height: inherit;
-  object-fit: cover;
-  transition: transform 260ms ease;
-}
-
-.activity-card:hover img {
-  transform: scale(1.035);
-}
-
-.activity-card-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(74, 44, 42, 0.08) 0%, rgba(74, 44, 42, 0.82) 100%);
-}
-
-.activity-card-content {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-}
-
-.activity-card h3 {
-  margin: 0;
-  color: var(--white);
-  font-size: clamp(21px, 2vw, 28px);
-}
-
-.activity-card p {
-  margin: 8px 0 0;
-  color: var(--soft);
-  font-size: 14px;
-  line-height: 1.5;
+  border-color: var(--stone);
+  box-shadow: none;
 }
 
 .location-banner {
@@ -1027,7 +993,7 @@ li + li {
   .quick-facts,
   .feature-cards,
   .photo-gallery-grid,
-  .activity-grid,
+  .environment-grid,
   .review-grid,
   .amenity-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1095,7 +1061,7 @@ li + li {
   .split-list,
   .photo-gallery-grid,
   .amenity-grid,
-  .activity-grid,
+  .environment-grid,
   .distance-list,
   .review-grid,
   .rate-cards {
