@@ -428,7 +428,7 @@ li + li {
 }
 
 .feature-cards {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   margin-top: 46px;
 }
 
@@ -450,6 +450,46 @@ li + li {
 .review-grid blockquote,
 .rate-cards article {
   padding: 26px;
+}
+
+.feature-cards article {
+  display: flex;
+  min-height: 250px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 18px;
+  text-align: center;
+}
+
+.feature-icon {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 28px;
+  color: var(--chocolate);
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.feature-cards h3 {
+  max-width: 150px;
+  margin: 0 auto;
+  color: var(--chocolate);
+  font-family: var(--body-font);
+  font-size: clamp(20px, 1.8vw, 28px);
+  font-weight: 700;
+  line-height: 1.18;
+}
+
+.feature-cards p {
+  max-width: 160px;
+  margin: 18px auto 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.65;
 }
 
 .feature-cards span,
