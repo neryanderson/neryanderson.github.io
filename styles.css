@@ -572,6 +572,23 @@ li + li {
   min-width: 0;
 }
 
+.location-intro-title,
+.location-intro-text {
+  font-family: var(--body-font);
+}
+
+.location-intro-title {
+  margin: 14px 0 0;
+  font-size: clamp(18px, 2vw, 23px);
+  font-weight: 500;
+}
+
+.location-intro-text {
+  margin: 10px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .distance-list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
