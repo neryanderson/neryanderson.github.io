@@ -577,6 +577,12 @@ li + li {
   font-family: var(--body-font);
 }
 
+.environment-section .environment-intro-title,
+.location-intro-title,
+.reviews-intro {
+  color: var(--chocolate);
+}
+
 .location-intro-title {
   margin: 14px 0 0;
   font-size: clamp(18px, 2vw, 23px);
