@@ -312,10 +312,11 @@ li + li {
 
 .quick-facts strong {
   display: block;
+  max-width: 180px;
   margin-top: 8px;
   color: var(--green);
-  font-size: clamp(24px, 3vw, 34px);
-  line-height: 1;
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.15;
 }
 
 .quick-facts span {
